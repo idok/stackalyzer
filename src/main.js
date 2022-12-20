@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {locate, parseLoc} from './index.js'
 
 const files = process.argv.slice(2)

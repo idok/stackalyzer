@@ -1,6 +1,18 @@
 {
-  "name": "stack-analyzer",
+  "name": "stackalyzer",
   "type": "module",
+  "version": "1.0.0",
+  "bin": {
+    "stackalyzer": "./src/main.js"
+  },
+  "scripts": {
+    "build": "",
+    "test": "",
+    "patch": "npm version patch -m\"update version to %s\" && git push --follow-tags",
+    "minor": "npm version minor -m\"update version to %s\" && git push --follow-tags",
+    "major": "npm version major -m\"update version to %s\" && git push --follow-tags",
+    "version": "auto-changelog -p && git add CHANGELOG.md && git commit -m'update change log' && git push"
+  },
   "dependencies": {
     "fs-extra": "^11.1.0",
     "node-fetch": "^3.3.0",
